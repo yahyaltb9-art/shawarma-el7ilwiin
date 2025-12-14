@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shawarma El7ilwiin - Elegant Middle Eastern Cuisine. Authentic Shawarma in a luxurious setting.">
+    <title>Shawarma El7ilwiin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: #8B0000; /* Deep red for elegance */
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=1920&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .btn-elegant {
+            background-color: #FFD700; /* Gold */
+            color: #8B0000;
+            border: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-elegant:hover {
+            background-color: #FFA500;
+            transform: scale(1.05);
+        }
+        .nav-link {
+            color: white !important;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #FFD700 !important;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .img-fluid {
+            border-radius: 10px;
+            height: 250px; /* Bigger images */
+            object-fit: cover;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 0;
+        }
+        .menu-item {
+            font-size: 1.1rem; /* Slightly bigger text for menu items */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <h1 class="display-4 text-center text-white">Shawarma El7ilwiin</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero fade-in">
+        <div class="container">
+            <h2>Elegant Middle Eastern Cuisine</h2>
+            <p>Indulge in authentic Shawarma crafted with passion and tradition in a luxurious ambiance.</p>
+            <button class="btn btn-elegant" onclick="scrollToSection('menu')">Discover Our Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Exquisite Menu</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" class="card-img-top img-fluid" alt="Chicken Shawarma Wrap">
+                        <div class="card-body">
+                            <h5 class="card-title">Shawarma Wraps</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-item">Chicken Shawarma Wrap - $10</li>
+                                <li class="list-group-item menu-item">Beef Shawarma Wrap - $12</li>
+                                <li class="list-group-item menu-item">Lamb Shawarma Wrap - $14</li>
+                                <li class="list-group-item menu-item">Mixed Shawarma Wrap - $16</li>
+                                <li class="list-group-item menu-item">Veggie Shawarma Wrap - $9</li>
+                                <li class="list-group-item menu-item">Spicy Shawarma Wrap - $11</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1541599468348-e96984315621?w=400&h=300&fit=crop" class="card-img-top img-fluid" alt="Shawarma Plate with Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Plates & Sides</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-item">Shawarma Plate with Rice - $15</li>
+                                <li class="list-group-item menu-item">Hummus & Pita - $8</li>
+                                <li class="list-group-item menu-item">Falafel Bowl - $11</li>
+                                <li class="list-group-item menu-item">Tabouli Salad - $7</li>
+                                <li class="list-group-item menu-item">Baba Ganoush - $9</li>
+                                <li class="list-group-item menu-item">Grilled Vegetables - $10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" class="card-img-top img-fluid" alt="Baklava Dessert">
+                        <div class="card-body">
+                            <h5 class="card-title">Desserts & Drinks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-item">Baklava - $6</li>
+                                <li class="list-group-item menu-item">Turkish Coffee - $4</li>
+                                <li class="list-group-item menu-item">Mint Lemonade - $3</li>
+                                <li class="list-group-item menu-item">Kunafa - $7</li>
+                                <li class="list-group-item menu-item">Halva - $5</li>
+                                <li class="list-group-item menu-item">Fresh Juice (Orange) - $4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1551782450-17144efb5723?w=400&h=300&fit=crop" class="card-img-top img-fluid" alt="Special Shawarma Platter">
+                        <div class="card-body">
+                            <h5 class="card-title">Chef's Specials</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-item">Royal Shawarma Platter - $20</li>
+                                <li class="list-group-item menu-item">Family Feast (Serves 4) - $45</li>
+                                <li class="list-group-item menu-item">Spiced Lamb Kebab - $18</li>
+                                <li class="list-group-item menu-item">Mediterranean Mezze - $14</li>
+                                <li class="list-group-item menu-item">Date-Stuffed Chicken - $16</li>
+                                <li class="list-group-item menu-item">Pistachio Ice Cream - $5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Elegant Story</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Restaurant interior">
+                </div>
+                <div class="col-md-6">
+                    <p>Shawarma El7ilwiin embodies elegance and tradition. Since 2015, we've served exquisite Middle Eastern dishes in a refined setting, using only the finest ingredients and time-honored recipes.</p>
+                    <h4>Photo Gallery</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop" class="img-fluid rounded mb-2" alt="Fresh Shawarma preparation">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://images.unsplash.com/photo-1541599468348-e96984315621?w=300&h=200&fit=crop" class="img-fluid rounded mb-2" alt="Dining area">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Esteemed Guests Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"An elegant dining experience. The Shawarma is unparalleled."</p>
+                            <footer class="blockquote-footer">Ahmed K.</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"Luxurious ambiance and authentic flavors. Highly refined."</p>
+                            <footer class="blockquote-footer">Sara M.</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"The Baklava is a masterpiece. Pure elegance."</p>
+                            <footer class="blockquote-footer">Omar L.</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact & Reservations</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Address:</strong> 456 Shawarma St, Flavor City, NY 67890</p>
+                    <p><strong>Phone:</strong> (987) 654-3210</p>
+                    <p><strong>Email:</strong> info@shawarmael7ilwiin.com</p>
+                    <p><strong>Hours:</strong> Sun-Thu 11am-11pm, Fri-Sat 11am-12am</p>
+                    <h4>Find Us</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.24126415!2d-73.98785368459375!3d40.75889597932781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1640999999999!5m2!1sen!2sus" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h3>Reserve Your Table</h3>
+                    <form id="reservationForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="time" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="guests" min="1" max="20" required>
+                        </div>
+                        <button type="submit" class="btn btn-elegant">Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2023 Shawarma El7ilwiin. All rights reserved. | Follow us on <a href="#" style="color: #FFD700;">Instagram</a> | <a href="#" style="color: #FFD700;">Facebook</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+            
+            if (!name || !email || !phone || !date || !time || !guests) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            alert(`Thank you, ${name}! Your reservation for ${guests} guests on ${date} at ${time} has been noted. We'll confirm shortly.`);
+        });
+
+        // Fade-in animation on load
+        window.addEventListener('load', function() {
+            document.querySelector('.hero').classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>
